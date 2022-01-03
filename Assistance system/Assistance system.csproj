@@ -50,10 +50,19 @@
     <Compile Include="Presentacion\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Personal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +111,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\antena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pista-anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-Total.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior total.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente total.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior total1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente total1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
