@@ -1,0 +1,9 @@
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\bin\Debug\Assistance system.exe
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\bin\Debug\Assistance system.pdb
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance system.csprojAssemblyReference.cache
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance_system.Presentacion.MenuPrincipal.resources
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance_system.Properties.Resources.resources
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance system.csproj.GenerateResource.cache
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance system.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance system.exe
+C:\Users\Windows 10\source\repos\Assistance system\Assistance system\obj\Debug\Assistance system.pdb

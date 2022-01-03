@@ -63,6 +63,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,6 +78,30 @@
   <ItemGroup>
     <Folder Include="Datos\" />
     <Folder Include="Logica\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj-de-pared.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj-de-pared %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj-de-pared %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copia-de-respaldo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antena.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
