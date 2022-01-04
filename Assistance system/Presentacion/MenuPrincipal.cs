@@ -22,5 +22,18 @@ namespace Assistance_system.Presentacion
             panelBienvenida.Dock = DockStyle.Fill;
 
         }
+
+        private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            //int height = panelPadre.Height;
+           // int width = panelPadre.Width;
+            panelPadre.Controls.Clear();
+            Personal control = new Personal();
+            //control.Width = width;
+            //control.Height = height;
+            control.Dock = DockStyle.Fill;
+
+            panelPadre.Controls.Add(control);
+        }
     }
 }
