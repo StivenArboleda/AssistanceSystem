@@ -70,7 +70,7 @@ namespace Assistance_system.Datos
                 ConexionMaestra.open();
                 SqlCommand cmd = new SqlCommand("eliminarPersonal", ConexionMaestra.conectar);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Id_personal", parametros.Id_personal);
+                cmd.Parameters.AddWithValue("@Idpersonal", parametros.Id_personal);
                 cmd.ExecuteNonQuery();
 
                 return true;
@@ -126,6 +126,48 @@ namespace Assistance_system.Datos
             {
 
                 MessageBox.Show(ex.StackTrace);
+            }
+            finally
+            {
+                ConexionMaestra.close();
+            }
+        }
+
+        public bool restaurarPersonal(Lpersonal parametros)
+        {
+            try
+            {
+                ConexionMaestra.open();
+                SqlCommand cmd = new SqlCommand("restaurar_personal", ConexionMaestra.conectar);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Idpersonal", parametros.Id_personal);
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                ConexionMaestra.close();
+            }
+        }
+
+        public void contarPersonal(ref int contador)
+        {
+            try
+            {
+                ConexionMaestra.open();
+                SqlCommand cmd = new SqlCommand("select Count(Id_personal) from Personal", ConexionMaestra.conectar);
+                contador = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception)
+            {
+                contador = 0;
+                
             }
             finally
             {

@@ -29,29 +29,41 @@ namespace Assistance_system.Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnMostrarTodos = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtBuscador = new System.Windows.Forms.TextBox();
+            this.dataListadoPersonal = new System.Windows.Forms.DataGridView();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelPaginado = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.lblTotalPag = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblPag = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnUltimaPag = new System.Windows.Forms.Button();
+            this.btnPrimeraPag = new System.Windows.Forms.Button();
             this.btnSiguientePag = new System.Windows.Forms.Button();
             this.btnAnteriorPag = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelRegistros = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dataListadoCargos = new System.Windows.Forms.DataGridView();
+            this.EditarC = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelCargos = new System.Windows.Forms.Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnGuardarC = new System.Windows.Forms.Button();
             this.btnGuardarCambiosC = new System.Windows.Forms.Button();
+            this.btnVolverCargo = new System.Windows.Forms.Button();
             this.txtSueldoHoraCa = new System.Windows.Forms.TextBox();
             this.txtCargosCa = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnVolverPersonal = new System.Windows.Forms.Button();
+            this.PanelBtnGuardarPersonal = new System.Windows.Forms.FlowLayoutPanel();
             this.btnGuardarPersonal = new System.Windows.Forms.Button();
             this.btnGuardarCambiosPersonal = new System.Windows.Forms.Button();
             this.btnAgregarCargo = new System.Windows.Forms.Button();
@@ -60,51 +72,51 @@ namespace Assistance_system.Presentacion
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.TxtNombres = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblSueldo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataListadoCargos = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoPersonal)).BeginInit();
             this.PanelPaginado.SuspendLayout();
             this.PanelRegistros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).BeginInit();
             this.PanelCargos.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).BeginInit();
+            this.PanelBtnGuardarPersonal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btnMostrarTodos);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtBuscador);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1445, 75);
             this.panel1.TabIndex = 0;
             // 
-            // button6
+            // btnMostrarTodos
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(509, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(153, 57);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "Mostrar todos";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnMostrarTodos.FlatAppearance.BorderSize = 0;
+            this.btnMostrarTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarTodos.Location = new System.Drawing.Point(509, 6);
+            this.btnMostrarTodos.Name = "btnMostrarTodos";
+            this.btnMostrarTodos.Size = new System.Drawing.Size(153, 57);
+            this.btnMostrarTodos.TabIndex = 12;
+            this.btnMostrarTodos.Text = "Mostrar todos";
+            this.btnMostrarTodos.UseVisualStyleBackColor = true;
+            this.btnMostrarTodos.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnAgregar
             // 
@@ -114,9 +126,9 @@ namespace Assistance_system.Presentacion
             this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(1383, 0);
+            this.btnAgregar.Location = new System.Drawing.Point(1365, 0);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(62, 75);
+            this.btnAgregar.Size = new System.Drawing.Size(80, 75);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -131,39 +143,79 @@ namespace Assistance_system.Presentacion
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtBuscador
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(19, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 30);
-            this.textBox1.TabIndex = 0;
+            this.txtBuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscador.Location = new System.Drawing.Point(19, 23);
+            this.txtBuscador.Name = "txtBuscador";
+            this.txtBuscador.Size = new System.Drawing.Size(294, 30);
+            this.txtBuscador.TabIndex = 0;
+            this.txtBuscador.TextChanged += new System.EventHandler(this.txtBuscador_TextChanged);
             // 
-            // dataGridView1
+            // dataListadoPersonal
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1445, 805);
-            this.dataGridView1.TabIndex = 1;
+            this.dataListadoPersonal.AllowUserToAddRows = false;
+            this.dataListadoPersonal.AllowUserToDeleteRows = false;
+            this.dataListadoPersonal.AllowUserToResizeRows = false;
+            this.dataListadoPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataListadoPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListadoPersonal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar,
+            this.Editar});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoPersonal.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataListadoPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataListadoPersonal.Location = new System.Drawing.Point(0, 75);
+            this.dataListadoPersonal.Name = "dataListadoPersonal";
+            this.dataListadoPersonal.ReadOnly = true;
+            this.dataListadoPersonal.RowHeadersWidth = 51;
+            this.dataListadoPersonal.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
+            this.dataListadoPersonal.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.dataListadoPersonal.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dataListadoPersonal.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(142)))), ((int)(((byte)(144)))));
+            this.dataListadoPersonal.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataListadoPersonal.RowTemplate.Height = 40;
+            this.dataListadoPersonal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListadoPersonal.Size = new System.Drawing.Size(1445, 644);
+            this.dataListadoPersonal.TabIndex = 1;
+            this.dataListadoPersonal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoPersonal_CellClick);
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Eliminar.HeaderText = "";
+            this.Eliminar.Image = global::Assistance_system.Properties.Resources.eliminar;
+            this.Eliminar.MinimumWidth = 50;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Width = 50;
+            // 
+            // Editar
+            // 
+            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Editar.FillWeight = 50F;
+            this.Editar.HeaderText = "";
+            this.Editar.Image = global::Assistance_system.Properties.Resources.editar;
+            this.Editar.MinimumWidth = 50;
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Width = 50;
             // 
             // PanelPaginado
             // 
             this.PanelPaginado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
-            this.PanelPaginado.Controls.Add(this.label9);
+            this.PanelPaginado.Controls.Add(this.lblTotalPag);
             this.PanelPaginado.Controls.Add(this.label8);
-            this.PanelPaginado.Controls.Add(this.label7);
+            this.PanelPaginado.Controls.Add(this.lblPag);
             this.PanelPaginado.Controls.Add(this.label5);
-            this.PanelPaginado.Controls.Add(this.button8);
-            this.PanelPaginado.Controls.Add(this.button7);
+            this.PanelPaginado.Controls.Add(this.btnUltimaPag);
+            this.PanelPaginado.Controls.Add(this.btnPrimeraPag);
             this.PanelPaginado.Controls.Add(this.btnSiguientePag);
             this.PanelPaginado.Controls.Add(this.btnAnteriorPag);
             this.PanelPaginado.Controls.Add(this.flowLayoutPanel1);
@@ -174,33 +226,75 @@ namespace Assistance_system.Presentacion
             this.PanelPaginado.TabIndex = 2;
             this.PanelPaginado.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button8
+            // lblTotalPag
             // 
-            this.button8.BackgroundImage = global::Assistance_system.Properties.Resources.siguiente;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(812, 17);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 54);
-            this.button8.TabIndex = 4;
-            this.button8.UseVisualStyleBackColor = true;
+            this.lblTotalPag.AutoSize = true;
+            this.lblTotalPag.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPag.Location = new System.Drawing.Point(1131, 26);
+            this.lblTotalPag.Name = "lblTotalPag";
+            this.lblTotalPag.Size = new System.Drawing.Size(27, 29);
+            this.lblTotalPag.TabIndex = 12;
+            this.lblTotalPag.Text = "0";
             // 
-            // button7
+            // label8
             // 
-            this.button7.BackgroundImage = global::Assistance_system.Properties.Resources.pista_anterior;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(569, 17);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 54);
-            this.button7.TabIndex = 3;
-            this.button7.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1064, 26);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 29);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "de";
+            // 
+            // lblPag
+            // 
+            this.lblPag.AutoSize = true;
+            this.lblPag.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPag.Location = new System.Drawing.Point(1013, 26);
+            this.lblPag.Name = "lblPag";
+            this.lblPag.Size = new System.Drawing.Size(27, 29);
+            this.lblPag.TabIndex = 10;
+            this.lblPag.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(894, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 29);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Página";
+            // 
+            // btnUltimaPag
+            // 
+            this.btnUltimaPag.BackgroundImage = global::Assistance_system.Properties.Resources.UltimaPag;
+            this.btnUltimaPag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUltimaPag.FlatAppearance.BorderSize = 0;
+            this.btnUltimaPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUltimaPag.Location = new System.Drawing.Point(812, 17);
+            this.btnUltimaPag.Name = "btnUltimaPag";
+            this.btnUltimaPag.Size = new System.Drawing.Size(75, 54);
+            this.btnUltimaPag.TabIndex = 4;
+            this.btnUltimaPag.UseVisualStyleBackColor = true;
+            this.btnUltimaPag.Click += new System.EventHandler(this.btnUltimaPag_Click);
+            // 
+            // btnPrimeraPag
+            // 
+            this.btnPrimeraPag.BackgroundImage = global::Assistance_system.Properties.Resources.PrimeraPag;
+            this.btnPrimeraPag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPrimeraPag.FlatAppearance.BorderSize = 0;
+            this.btnPrimeraPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrimeraPag.Location = new System.Drawing.Point(569, 17);
+            this.btnPrimeraPag.Name = "btnPrimeraPag";
+            this.btnPrimeraPag.Size = new System.Drawing.Size(75, 54);
+            this.btnPrimeraPag.TabIndex = 3;
+            this.btnPrimeraPag.UseVisualStyleBackColor = true;
+            this.btnPrimeraPag.Click += new System.EventHandler(this.btnPrimeraPag_Click);
             // 
             // btnSiguientePag
             // 
-            this.btnSiguientePag.BackgroundImage = global::Assistance_system.Properties.Resources.siguiente;
+            this.btnSiguientePag.BackgroundImage = global::Assistance_system.Properties.Resources.SiguienteNormal;
             this.btnSiguientePag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSiguientePag.FlatAppearance.BorderSize = 0;
             this.btnSiguientePag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -209,10 +303,11 @@ namespace Assistance_system.Presentacion
             this.btnSiguientePag.Size = new System.Drawing.Size(75, 54);
             this.btnSiguientePag.TabIndex = 2;
             this.btnSiguientePag.UseVisualStyleBackColor = true;
+            this.btnSiguientePag.Click += new System.EventHandler(this.btnSiguientePag_Click);
             // 
             // btnAnteriorPag
             // 
-            this.btnAnteriorPag.BackgroundImage = global::Assistance_system.Properties.Resources.anterior;
+            this.btnAnteriorPag.BackgroundImage = global::Assistance_system.Properties.Resources.AnteriorNormal;
             this.btnAnteriorPag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAnteriorPag.FlatAppearance.BorderSize = 0;
             this.btnAnteriorPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -221,6 +316,7 @@ namespace Assistance_system.Presentacion
             this.btnAnteriorPag.Size = new System.Drawing.Size(71, 54);
             this.btnAnteriorPag.TabIndex = 1;
             this.btnAnteriorPag.UseVisualStyleBackColor = true;
+            this.btnAnteriorPag.Click += new System.EventHandler(this.btnAnteriorPag_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -231,17 +327,18 @@ namespace Assistance_system.Presentacion
             // 
             // PanelRegistros
             // 
+            this.PanelRegistros.Controls.Add(this.panel2);
             this.PanelRegistros.Controls.Add(this.dataListadoCargos);
             this.PanelRegistros.Controls.Add(this.PanelCargos);
-            this.PanelRegistros.Controls.Add(this.button5);
-            this.PanelRegistros.Controls.Add(this.flowLayoutPanel2);
+            this.PanelRegistros.Controls.Add(this.btnVolverPersonal);
+            this.PanelRegistros.Controls.Add(this.PanelBtnGuardarPersonal);
             this.PanelRegistros.Controls.Add(this.btnAgregarCargo);
             this.PanelRegistros.Controls.Add(this.comboBoxPais);
             this.PanelRegistros.Controls.Add(this.txtSueldoHora);
             this.PanelRegistros.Controls.Add(this.txtCargo);
             this.PanelRegistros.Controls.Add(this.txtId);
             this.PanelRegistros.Controls.Add(this.TxtNombres);
-            this.PanelRegistros.Controls.Add(this.label6);
+            this.PanelRegistros.Controls.Add(this.lblSueldo);
             this.PanelRegistros.Controls.Add(this.label4);
             this.PanelRegistros.Controls.Add(this.label3);
             this.PanelRegistros.Controls.Add(this.label2);
@@ -250,8 +347,49 @@ namespace Assistance_system.Presentacion
             this.PanelRegistros.Location = new System.Drawing.Point(19, 81);
             this.PanelRegistros.Name = "PanelRegistros";
             this.PanelRegistros.Size = new System.Drawing.Size(1423, 632);
-            this.PanelRegistros.TabIndex = 3;
+            this.PanelRegistros.TabIndex = 4;
             this.PanelRegistros.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(331, 10);
+            this.panel2.TabIndex = 16;
+            // 
+            // dataListadoCargos
+            // 
+            this.dataListadoCargos.AllowUserToAddRows = false;
+            this.dataListadoCargos.AllowUserToDeleteRows = false;
+            this.dataListadoCargos.AllowUserToResizeRows = false;
+            this.dataListadoCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListadoCargos.ColumnHeadersVisible = false;
+            this.dataListadoCargos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EditarC});
+            this.dataListadoCargos.Location = new System.Drawing.Point(641, 469);
+            this.dataListadoCargos.Name = "dataListadoCargos";
+            this.dataListadoCargos.ReadOnly = true;
+            this.dataListadoCargos.RowHeadersWidth = 51;
+            this.dataListadoCargos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
+            this.dataListadoCargos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataListadoCargos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dataListadoCargos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(142)))), ((int)(((byte)(144)))));
+            this.dataListadoCargos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataListadoCargos.RowTemplate.Height = 35;
+            this.dataListadoCargos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListadoCargos.Size = new System.Drawing.Size(391, 150);
+            this.dataListadoCargos.TabIndex = 15;
+            this.dataListadoCargos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoCargos_CellClick);
+            // 
+            // EditarC
+            // 
+            this.EditarC.HeaderText = "";
+            this.EditarC.Image = global::Assistance_system.Properties.Resources.boton_editar;
+            this.EditarC.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.EditarC.MinimumWidth = 6;
+            this.EditarC.Name = "EditarC";
+            this.EditarC.ReadOnly = true;
+            this.EditarC.Width = 125;
             // 
             // PanelCargos
             // 
@@ -269,9 +407,10 @@ namespace Assistance_system.Presentacion
             // 
             this.flowLayoutPanel3.Controls.Add(this.btnGuardarC);
             this.flowLayoutPanel3.Controls.Add(this.btnGuardarCambiosC);
+            this.flowLayoutPanel3.Controls.Add(this.btnVolverCargo);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(17, 177);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(353, 82);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(465, 82);
             this.flowLayoutPanel3.TabIndex = 17;
             // 
             // btnGuardarC
@@ -298,6 +437,21 @@ namespace Assistance_system.Presentacion
             this.btnGuardarCambiosC.TabIndex = 1;
             this.btnGuardarCambiosC.Text = "Guardar *";
             this.btnGuardarCambiosC.UseVisualStyleBackColor = true;
+            this.btnGuardarCambiosC.Click += new System.EventHandler(this.btnGuardarCambiosC_Click);
+            // 
+            // btnVolverCargo
+            // 
+            this.btnVolverCargo.BackgroundImage = global::Assistance_system.Properties.Resources.back;
+            this.btnVolverCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVolverCargo.FlatAppearance.BorderSize = 0;
+            this.btnVolverCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolverCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverCargo.Location = new System.Drawing.Point(305, 3);
+            this.btnVolverCargo.Name = "btnVolverCargo";
+            this.btnVolverCargo.Size = new System.Drawing.Size(100, 75);
+            this.btnVolverCargo.TabIndex = 14;
+            this.btnVolverCargo.UseVisualStyleBackColor = true;
+            this.btnVolverCargo.Click += new System.EventHandler(this.btnVolverCargo_Click);
             // 
             // txtSueldoHoraCa
             // 
@@ -336,27 +490,28 @@ namespace Assistance_system.Presentacion
             this.label11.TabIndex = 13;
             this.label11.Text = "Cargo:";
             // 
-            // button5
+            // btnVolverPersonal
             // 
-            this.button5.BackgroundImage = global::Assistance_system.Properties.Resources.back;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(751, 187);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 75);
-            this.button5.TabIndex = 13;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnVolverPersonal.BackgroundImage = global::Assistance_system.Properties.Resources.back;
+            this.btnVolverPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVolverPersonal.FlatAppearance.BorderSize = 0;
+            this.btnVolverPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolverPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverPersonal.Location = new System.Drawing.Point(751, 187);
+            this.btnVolverPersonal.Name = "btnVolverPersonal";
+            this.btnVolverPersonal.Size = new System.Drawing.Size(100, 75);
+            this.btnVolverPersonal.TabIndex = 13;
+            this.btnVolverPersonal.UseVisualStyleBackColor = true;
+            this.btnVolverPersonal.Click += new System.EventHandler(this.btnVolverPersonal_Click);
             // 
-            // flowLayoutPanel2
+            // PanelBtnGuardarPersonal
             // 
-            this.flowLayoutPanel2.Controls.Add(this.btnGuardarPersonal);
-            this.flowLayoutPanel2.Controls.Add(this.btnGuardarCambiosPersonal);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(87, 545);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(342, 60);
-            this.flowLayoutPanel2.TabIndex = 12;
+            this.PanelBtnGuardarPersonal.Controls.Add(this.btnGuardarPersonal);
+            this.PanelBtnGuardarPersonal.Controls.Add(this.btnGuardarCambiosPersonal);
+            this.PanelBtnGuardarPersonal.Location = new System.Drawing.Point(213, 514);
+            this.PanelBtnGuardarPersonal.Name = "PanelBtnGuardarPersonal";
+            this.PanelBtnGuardarPersonal.Size = new System.Drawing.Size(342, 64);
+            this.PanelBtnGuardarPersonal.TabIndex = 12;
             // 
             // btnGuardarPersonal
             // 
@@ -382,13 +537,14 @@ namespace Assistance_system.Presentacion
             this.btnGuardarCambiosPersonal.TabIndex = 1;
             this.btnGuardarCambiosPersonal.Text = "Guardar *";
             this.btnGuardarCambiosPersonal.UseVisualStyleBackColor = true;
+            this.btnGuardarCambiosPersonal.Click += new System.EventHandler(this.btnGuardarCambiosPersonal_Click);
             // 
             // btnAgregarCargo
             // 
             this.btnAgregarCargo.FlatAppearance.BorderSize = 0;
             this.btnAgregarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarCargo.Location = new System.Drawing.Point(624, 381);
+            this.btnAgregarCargo.Location = new System.Drawing.Point(641, 360);
             this.btnAgregarCargo.Name = "btnAgregarCargo";
             this.btnAgregarCargo.Size = new System.Drawing.Size(173, 82);
             this.btnAgregarCargo.TabIndex = 11;
@@ -438,7 +594,7 @@ namespace Assistance_system.Presentacion
             this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCargo.Location = new System.Drawing.Point(213, 408);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(331, 34);
+            this.txtCargo.Size = new System.Drawing.Size(391, 34);
             this.txtCargo.TabIndex = 8;
             this.txtCargo.TextChanged += new System.EventHandler(this.txtCargo_TextChanged);
             // 
@@ -458,15 +614,15 @@ namespace Assistance_system.Presentacion
             this.TxtNombres.Size = new System.Drawing.Size(331, 34);
             this.TxtNombres.TabIndex = 3;
             // 
-            // label6
+            // lblSueldo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(85, 474);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 29);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Sueldo por hora:";
+            this.lblSueldo.AutoSize = true;
+            this.lblSueldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.lblSueldo.Location = new System.Drawing.Point(85, 474);
+            this.lblSueldo.Name = "lblSueldo";
+            this.lblSueldo.Size = new System.Drawing.Size(208, 29);
+            this.lblSueldo.TabIndex = 5;
+            this.lblSueldo.Text = "Sueldo por hora:";
             // 
             // label4
             // 
@@ -508,59 +664,44 @@ namespace Assistance_system.Presentacion
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre y apellido: ";
             // 
-            // label9
+            // timer1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1131, 26);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 29);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "0";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label8
+            // dataGridViewImageColumn1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1064, 26);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 29);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "de";
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Assistance_system.Properties.Resources.boton_editar;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
-            // label7
+            // dataGridViewImageColumn2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1013, 26);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 29);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "0";
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewImageColumn2.FillWeight = 50F;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::Assistance_system.Properties.Resources.boton_editar;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Width = 125;
             // 
-            // label5
+            // dataGridViewImageColumn3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(894, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 29);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Página";
-            // 
-            // dataListadoCargos
-            // 
-            this.dataListadoCargos.AllowUserToAddRows = false;
-            this.dataListadoCargos.AllowUserToDeleteRows = false;
-            this.dataListadoCargos.AllowUserToResizeRows = false;
-            this.dataListadoCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListadoCargos.Location = new System.Drawing.Point(644, 469);
-            this.dataListadoCargos.Name = "dataListadoCargos";
-            this.dataListadoCargos.RowHeadersWidth = 51;
-            this.dataListadoCargos.RowTemplate.Height = 24;
-            this.dataListadoCargos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListadoCargos.Size = new System.Drawing.Size(259, 150);
-            this.dataListadoCargos.TabIndex = 15;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::Assistance_system.Properties.Resources.boton_editar;
+            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn3.Width = 125;
             // 
             // Personal
             // 
@@ -568,24 +709,25 @@ namespace Assistance_system.Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.Controls.Add(this.PanelRegistros);
+            this.Controls.Add(this.dataListadoPersonal);
             this.Controls.Add(this.PanelPaginado);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Personal";
             this.Size = new System.Drawing.Size(1445, 805);
+            this.Load += new System.EventHandler(this.Personal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoPersonal)).EndInit();
             this.PanelPaginado.ResumeLayout(false);
             this.PanelPaginado.PerformLayout();
             this.PanelRegistros.ResumeLayout(false);
             this.PanelRegistros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).EndInit();
             this.PanelCargos.ResumeLayout(false);
             this.PanelCargos.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).EndInit();
+            this.PanelBtnGuardarPersonal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -593,45 +735,54 @@ namespace Assistance_system.Presentacion
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataListadoPersonal;
         private System.Windows.Forms.Panel PanelPaginado;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscador;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel PanelRegistros;
-        private System.Windows.Forms.TextBox txtSueldoHora;
-        private System.Windows.Forms.TextBox txtCargo;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.TextBox TxtNombres;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxPais;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnAgregarCargo;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button btnGuardarPersonal;
-        private System.Windows.Forms.Button btnGuardarCambiosPersonal;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnMostrarTodos;
         private System.Windows.Forms.Button btnAnteriorPag;
         private System.Windows.Forms.Button btnSiguientePag;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnUltimaPag;
+        private System.Windows.Forms.Button btnPrimeraPag;
+        private System.Windows.Forms.Label lblTotalPag;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblPag;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.Panel PanelRegistros;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataListadoCargos;
+        private System.Windows.Forms.DataGridViewImageColumn EditarC;
         private System.Windows.Forms.Panel PanelCargos;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Button btnGuardarC;
         private System.Windows.Forms.Button btnGuardarCambiosC;
+        private System.Windows.Forms.Button btnVolverCargo;
         private System.Windows.Forms.TextBox txtSueldoHoraCa;
         private System.Windows.Forms.TextBox txtCargosCa;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataListadoCargos;
+        private System.Windows.Forms.Button btnVolverPersonal;
+        private System.Windows.Forms.FlowLayoutPanel PanelBtnGuardarPersonal;
+        private System.Windows.Forms.Button btnGuardarPersonal;
+        private System.Windows.Forms.Button btnGuardarCambiosPersonal;
+        private System.Windows.Forms.Button btnAgregarCargo;
+        private System.Windows.Forms.ComboBox comboBoxPais;
+        private System.Windows.Forms.TextBox txtSueldoHora;
+        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox TxtNombres;
+        private System.Windows.Forms.Label lblSueldo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
+        private System.Windows.Forms.DataGridViewImageColumn Editar;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -90,7 +90,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\boton-editar.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reloj-de-pared.png" />
   </ItemGroup>
@@ -162,6 +164,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\siguiente total1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltimaPag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SiguienteNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnteriorNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrimeraPag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

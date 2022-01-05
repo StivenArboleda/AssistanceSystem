@@ -123,6 +123,16 @@ namespace Assistance_system.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AnteriorNormal {
+            get {
+                object obj = ResourceManager.GetObject("AnteriorNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
@@ -143,6 +153,16 @@ namespace Assistance_system.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_editar {
+            get {
+                object obj = ResourceManager.GetObject("boton-editar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap copia_de_respaldo {
             get {
                 object obj = ResourceManager.GetObject("copia-de-respaldo", resourceCulture);
@@ -156,6 +176,26 @@ namespace Assistance_system.Properties {
         internal static System.Drawing.Bitmap datos {
             get {
                 object obj = ResourceManager.GetObject("datos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editar {
+            get {
+                object obj = ResourceManager.GetObject("editar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eliminar {
+            get {
+                object obj = ResourceManager.GetObject("eliminar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +226,16 @@ namespace Assistance_system.Properties {
         internal static System.Drawing.Bitmap pista_anterior {
             get {
                 object obj = ResourceManager.GetObject("pista-anterior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PrimeraPag {
+            get {
+                object obj = ResourceManager.GetObject("PrimeraPag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +326,26 @@ namespace Assistance_system.Properties {
         internal static System.Drawing.Bitmap siguiente1 {
             get {
                 object obj = ResourceManager.GetObject("siguiente1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SiguienteNormal {
+            get {
+                object obj = ResourceManager.GetObject("SiguienteNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UltimaPag {
+            get {
+                object obj = ResourceManager.GetObject("UltimaPag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

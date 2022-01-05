@@ -8,14 +8,6 @@ namespace Assistance_system.Logica
     public class Lpersonal
     {
 
-  
-        //	[SueldoPorHora] [numeric] (18, 2) NULL,
-        //	[Estado]
-        //		[varchar]
-        //		(max) NULL,
-        //	[codigo] [varchar]
-        //		(max) NULL,
-
         public int Id_personal { get; set; }
 
         public String Nombre { get; set; }
