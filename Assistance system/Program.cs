@@ -15,7 +15,8 @@ namespace Assistance_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Presentacion.MenuPrincipal());
+            //Application.Run(new Presentacion.MenuPrincipal());
+            Application.Run(new Presentacion.TomarAsistencia());
         }
     }
 }

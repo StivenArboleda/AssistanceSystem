@@ -203,6 +203,16 @@ namespace Assistance_system.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iniciar_sesion {
+            get {
+                object obj = ResourceManager.GetObject("iniciar-sesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Left_Total {
             get {
                 object obj = ResourceManager.GetObject("Left-Total", resourceCulture);
@@ -356,6 +366,16 @@ namespace Assistance_system.Properties {
         internal static System.Drawing.Bitmap usuario {
             get {
                 object obj = ResourceManager.GetObject("usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_20_at_1_01_30_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-20 at 1.01.30 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
