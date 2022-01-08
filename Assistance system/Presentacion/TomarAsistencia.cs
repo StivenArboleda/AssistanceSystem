@@ -51,7 +51,6 @@ namespace Assistance_system.Presentacion
                         panelObservacion.BringToFront();
                         txtObservacion.Clear();
                         txtObservacion.Focus();
-                        
                     }
                     else
                     {
@@ -82,6 +81,7 @@ namespace Assistance_system.Presentacion
 
         private void insertarAsistencias()
         {
+
             if (string.IsNullOrEmpty(txtObservacion.Text))
             {
                 txtObservacion.Text = "--";
@@ -111,7 +111,8 @@ namespace Assistance_system.Presentacion
             Dasistencias funcion = new Dasistencias();
             funcion.buscarAsistenciasId(ref dt, IdPersonal);
             Contador = dt.Rows.Count;
-            if(Contador > 0)
+
+            if (Contador > 0)
             {
                 fechaReg = Convert.ToDateTime(dt.Rows[0]["Fecha_entrada"]);
             }

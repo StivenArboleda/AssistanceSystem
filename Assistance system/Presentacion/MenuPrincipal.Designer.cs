@@ -371,6 +371,7 @@ namespace Assistance_system.Presentacion
             this.btn_usuarios.Text = "Usuarios";
             this.btn_usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_usuarios.UseVisualStyleBackColor = false;
+            this.btn_usuarios.Click += new System.EventHandler(this.btn_usuarios_Click);
             // 
             // panel9
             // 

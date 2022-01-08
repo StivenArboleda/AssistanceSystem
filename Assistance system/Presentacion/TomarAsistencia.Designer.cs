@@ -31,7 +31,6 @@ namespace Assistance_system.Presentacion
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnInicioSesion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -48,7 +47,6 @@ namespace Assistance_system.Presentacion
             this.DataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.TXTIDPERSONAL = new System.Windows.Forms.Label();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
-            this.PictureBox4 = new System.Windows.Forms.PictureBox();
             this.Label8 = new System.Windows.Forms.Label();
             this.txtaviso = new System.Windows.Forms.Label();
             this.lblfecha = new System.Windows.Forms.Label();
@@ -57,12 +55,14 @@ namespace Assistance_system.Presentacion
             this.Label3 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelObservacion = new System.Windows.Forms.Panel();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.txtObservacion = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timerHora = new System.Windows.Forms.Timer(this.components);
+            this.PictureBox4 = new System.Windows.Forms.PictureBox();
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnInicioSesion = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelCentral.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -71,9 +71,9 @@ namespace Assistance_system.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoacumuladohorASDIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadohoras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoasistencia)).BeginInit();
+            this.panelObservacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
-            this.panelObservacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,24 +85,6 @@ namespace Assistance_system.Presentacion
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1787, 75);
             this.panel1.TabIndex = 0;
-            // 
-            // btnInicioSesion
-            // 
-            this.btnInicioSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
-            this.btnInicioSesion.BackgroundImage = global::Assistance_system.Properties.Resources.iniciar_sesion;
-            this.btnInicioSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnInicioSesion.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnInicioSesion.FlatAppearance.BorderSize = 0;
-            this.btnInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicioSesion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnInicioSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInicioSesion.Location = new System.Drawing.Point(1707, 0);
-            this.btnInicioSesion.Name = "btnInicioSesion";
-            this.btnInicioSesion.Size = new System.Drawing.Size(80, 75);
-            this.btnInicioSesion.TabIndex = 1;
-            this.btnInicioSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicioSesion.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -345,16 +327,6 @@ namespace Assistance_system.Presentacion
             this.txtIdentificacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtIdentificacion.TextChanged += new System.EventHandler(this.txtIdentificacion_TextChanged);
             // 
-            // PictureBox4
-            // 
-            this.PictureBox4.Location = new System.Drawing.Point(816, 670);
-            this.PictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox4.Name = "PictureBox4";
-            this.PictureBox4.Size = new System.Drawing.Size(113, 89);
-            this.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox4.TabIndex = 459;
-            this.PictureBox4.TabStop = false;
-            // 
             // Label8
             // 
             this.Label8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -455,18 +427,6 @@ namespace Assistance_system.Presentacion
             this.Label5.TabIndex = 338;
             this.Label5.Text = "Identificación:";
             // 
-            // PictureBox2
-            // 
-            this.PictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PictureBox2.Image = global::Assistance_system.Properties.Resources.WhatsApp_Image_2021_11_20_at_1_01_30_PM;
-            this.PictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(757, 281);
-            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox2.TabIndex = 459;
-            this.PictureBox2.TabStop = false;
-            // 
             // panelObservacion
             // 
             this.panelObservacion.Controls.Add(this.btnConfirmar);
@@ -530,6 +490,46 @@ namespace Assistance_system.Presentacion
             this.timerHora.Enabled = true;
             this.timerHora.Tick += new System.EventHandler(this.timerHora_Tick);
             // 
+            // PictureBox4
+            // 
+            this.PictureBox4.Location = new System.Drawing.Point(816, 670);
+            this.PictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.PictureBox4.Name = "PictureBox4";
+            this.PictureBox4.Size = new System.Drawing.Size(113, 89);
+            this.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox4.TabIndex = 459;
+            this.PictureBox4.TabStop = false;
+            // 
+            // PictureBox2
+            // 
+            this.PictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PictureBox2.Image = global::Assistance_system.Properties.Resources.WhatsApp_Image_2021_11_20_at_1_01_30_PM;
+            this.PictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.PictureBox2.Name = "PictureBox2";
+            this.PictureBox2.Size = new System.Drawing.Size(757, 281);
+            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox2.TabIndex = 459;
+            this.PictureBox2.TabStop = false;
+            // 
+            // btnInicioSesion
+            // 
+            this.btnInicioSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
+            this.btnInicioSesion.BackgroundImage = global::Assistance_system.Properties.Resources.iniciar_sesion;
+            this.btnInicioSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnInicioSesion.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnInicioSesion.FlatAppearance.BorderSize = 0;
+            this.btnInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicioSesion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnInicioSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInicioSesion.Location = new System.Drawing.Point(1707, 0);
+            this.btnInicioSesion.Name = "btnInicioSesion";
+            this.btnInicioSesion.Size = new System.Drawing.Size(80, 75);
+            this.btnInicioSesion.TabIndex = 1;
+            this.btnInicioSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicioSesion.UseVisualStyleBackColor = false;
+            // 
             // TomarAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -553,9 +553,9 @@ namespace Assistance_system.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoacumuladohorASDIA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadohoras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoasistencia)).EndInit();
+            this.panelObservacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
-            this.panelObservacion.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

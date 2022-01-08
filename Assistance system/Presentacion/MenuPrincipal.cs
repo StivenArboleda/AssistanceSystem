@@ -35,5 +35,13 @@ namespace Assistance_system.Presentacion
 
             panelPadre.Controls.Add(control);
         }
+
+        private void btn_usuarios_Click(object sender, EventArgs e)
+        {
+            panelPadre.Controls.Clear();
+            CtlUsuarios control = new CtlUsuarios();
+            control.Dock = DockStyle.Fill;
+            panelPadre.Controls.Add(control);
+        }
     }
 }

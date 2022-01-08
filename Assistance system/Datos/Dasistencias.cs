@@ -38,7 +38,7 @@ namespace Assistance_system.Datos
         {
             try
             {
-
+                ConexionMaestra.open();
                 SqlCommand cmd = new SqlCommand("Insertar_ASISTENCIAS", ConexionMaestra.conectar);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Id_personal", parametros.Id_personal);
@@ -47,11 +47,10 @@ namespace Assistance_system.Datos
                 cmd.Parameters.AddWithValue("@Estado", parametros.Estado);
                 cmd.Parameters.AddWithValue("@Hora", parametros.Hora);
                 cmd.Parameters.AddWithValue("@Observacion", parametros.Observacion);
-
+                
                 cmd.ExecuteNonQuery();
 
                 return true;
-
             }
             catch (Exception ex)
             {
