@@ -106,7 +106,7 @@ namespace Assistance_system.Presentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1355, 75);
+            this.panel1.Size = new System.Drawing.Size(1471, 75);
             this.panel1.TabIndex = 1;
             // 
             // btnAgregarRegistro
@@ -117,7 +117,7 @@ namespace Assistance_system.Presentacion
             this.btnAgregarRegistro.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAgregarRegistro.FlatAppearance.BorderSize = 0;
             this.btnAgregarRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarRegistro.Location = new System.Drawing.Point(1275, 0);
+            this.btnAgregarRegistro.Location = new System.Drawing.Point(1391, 0);
             this.btnAgregarRegistro.Name = "btnAgregarRegistro";
             this.btnAgregarRegistro.Size = new System.Drawing.Size(80, 75);
             this.btnAgregarRegistro.TabIndex = 2;
@@ -147,7 +147,7 @@ namespace Assistance_system.Presentacion
             this.dataListadoPersonal.AllowUserToAddRows = false;
             this.dataListadoPersonal.AllowUserToDeleteRows = false;
             this.dataListadoPersonal.AllowUserToResizeRows = false;
-            this.dataListadoPersonal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
+            this.dataListadoPersonal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.dataListadoPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataListadoPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListadoPersonal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -173,7 +173,7 @@ namespace Assistance_system.Presentacion
             this.dataListadoPersonal.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataListadoPersonal.RowTemplate.Height = 40;
             this.dataListadoPersonal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListadoPersonal.Size = new System.Drawing.Size(1355, 760);
+            this.dataListadoPersonal.Size = new System.Drawing.Size(1471, 841);
             this.dataListadoPersonal.TabIndex = 2;
             // 
             // Eliminar
@@ -199,6 +199,7 @@ namespace Assistance_system.Presentacion
             // 
             // panelRegistros
             // 
+            this.panelRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.panelRegistros.Controls.Add(this.panelIconos);
             this.panelRegistros.Controls.Add(this.lblAnuncioIcono);
             this.panelRegistros.Controls.Add(this.icono);
@@ -216,18 +217,18 @@ namespace Assistance_system.Presentacion
             this.panelRegistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelRegistros.Location = new System.Drawing.Point(24, 106);
             this.panelRegistros.Name = "panelRegistros";
-            this.panelRegistros.Size = new System.Drawing.Size(1273, 696);
+            this.panelRegistros.Size = new System.Drawing.Size(1435, 777);
             this.panelRegistros.TabIndex = 3;
             this.panelRegistros.Visible = false;
             // 
             // panelIconos
             // 
-            this.panelIconos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
+            this.panelIconos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.panelIconos.Controls.Add(this.button1);
             this.panelIconos.Controls.Add(this.pictureBox13);
             this.panelIconos.Controls.Add(this.flowLayoutPanel3);
             this.panelIconos.Controls.Add(this.flowLayoutPanel2);
-            this.panelIconos.Location = new System.Drawing.Point(1132, 42);
+            this.panelIconos.Location = new System.Drawing.Point(1333, 56);
             this.panelIconos.Name = "panelIconos";
             this.panelIconos.Size = new System.Drawing.Size(99, 651);
             this.panelIconos.TabIndex = 13;
@@ -379,10 +380,10 @@ namespace Assistance_system.Presentacion
             // 
             // lblAnuncioIcono
             // 
-            this.lblAnuncioIcono.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblAnuncioIcono.Location = new System.Drawing.Point(860, 56);
+            this.lblAnuncioIcono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(147)))), ((int)(((byte)(144)))));
+            this.lblAnuncioIcono.Location = new System.Drawing.Point(1082, 56);
             this.lblAnuncioIcono.Name = "lblAnuncioIcono";
-            this.lblAnuncioIcono.Size = new System.Drawing.Size(232, 229);
+            this.lblAnuncioIcono.Size = new System.Drawing.Size(219, 229);
             this.lblAnuncioIcono.TabIndex = 12;
             this.lblAnuncioIcono.Text = "Elige un icono";
             this.lblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -390,7 +391,7 @@ namespace Assistance_system.Presentacion
             // 
             // icono
             // 
-            this.icono.Location = new System.Drawing.Point(865, 56);
+            this.icono.Location = new System.Drawing.Point(1087, 56);
             this.icono.Name = "icono";
             this.icono.Size = new System.Drawing.Size(227, 229);
             this.icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -402,7 +403,7 @@ namespace Assistance_system.Presentacion
             this.flowLayoutPanel1.Controls.Add(this.btnGuardarUsuario);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizarUsuario);
             this.flowLayoutPanel1.Controls.Add(this.btnVolver);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(89, 588);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(168, 680);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(528, 71);
             this.flowLayoutPanel1.TabIndex = 10;
@@ -446,11 +447,11 @@ namespace Assistance_system.Presentacion
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.panel3.Controls.Add(this.dataListadoModulos);
-            this.panel3.Location = new System.Drawing.Point(89, 309);
+            this.panel3.Location = new System.Drawing.Point(175, 397);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(549, 236);
+            this.panel3.Size = new System.Drawing.Size(491, 233);
             this.panel3.TabIndex = 9;
             // 
             // dataListadoModulos
@@ -458,7 +459,7 @@ namespace Assistance_system.Presentacion
             this.dataListadoModulos.AllowUserToAddRows = false;
             this.dataListadoModulos.AllowUserToDeleteRows = false;
             this.dataListadoModulos.AllowUserToResizeRows = false;
-            this.dataListadoModulos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(102)))), ((int)(((byte)(114)))));
+            this.dataListadoModulos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.dataListadoModulos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataListadoModulos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataListadoModulos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -479,8 +480,9 @@ namespace Assistance_system.Presentacion
             this.dataListadoModulos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataListadoModulos.RowTemplate.Height = 30;
             this.dataListadoModulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListadoModulos.Size = new System.Drawing.Size(549, 236);
+            this.dataListadoModulos.Size = new System.Drawing.Size(491, 233);
             this.dataListadoModulos.TabIndex = 620;
+            this.dataListadoModulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoModulos_CellContentClick);
             // 
             // Marcar
             // 
@@ -491,9 +493,9 @@ namespace Assistance_system.Presentacion
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(227, 268);
+            this.label7.Location = new System.Drawing.Point(316, 352);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(421, 41);
+            this.label7.Size = new System.Drawing.Size(463, 41);
             this.label7.TabIndex = 8;
             this.label7.Text = "Marcar módulos a los cuales tendrá acceso.";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -502,7 +504,7 @@ namespace Assistance_system.Presentacion
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(84, 268);
+            this.label6.Location = new System.Drawing.Point(170, 353);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 29);
             this.label6.TabIndex = 7;
@@ -510,7 +512,7 @@ namespace Assistance_system.Presentacion
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(545, 175);
+            this.label4.Location = new System.Drawing.Point(664, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(309, 38);
             this.label4.TabIndex = 6;
@@ -520,7 +522,7 @@ namespace Assistance_system.Presentacion
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(51, 172);
+            this.label3.Location = new System.Drawing.Point(170, 256);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 29);
             this.label3.TabIndex = 5;
@@ -528,14 +530,14 @@ namespace Assistance_system.Presentacion
             // 
             // txtContrasenia
             // 
-            this.txtContrasenia.Location = new System.Drawing.Point(236, 171);
+            this.txtContrasenia.Location = new System.Drawing.Point(355, 255);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Size = new System.Drawing.Size(303, 30);
             this.txtContrasenia.TabIndex = 4;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(236, 115);
+            this.txtUsuario.Location = new System.Drawing.Point(355, 199);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(402, 30);
             this.txtUsuario.TabIndex = 3;
@@ -544,7 +546,7 @@ namespace Assistance_system.Presentacion
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(47, 115);
+            this.label2.Location = new System.Drawing.Point(170, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 29);
             this.label2.TabIndex = 2;
@@ -554,7 +556,7 @@ namespace Assistance_system.Presentacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(47, 56);
+            this.label1.Location = new System.Drawing.Point(170, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 29);
             this.label1.TabIndex = 1;
@@ -562,7 +564,7 @@ namespace Assistance_system.Presentacion
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(236, 56);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(355, 140);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(493, 30);
             this.txtNombreUsuario.TabIndex = 0;
@@ -596,7 +598,7 @@ namespace Assistance_system.Presentacion
             this.Controls.Add(this.dataListadoPersonal);
             this.Controls.Add(this.panel1);
             this.Name = "CtlUsuarios";
-            this.Size = new System.Drawing.Size(1355, 835);
+            this.Size = new System.Drawing.Size(1471, 916);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

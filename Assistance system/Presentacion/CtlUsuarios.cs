@@ -1,4 +1,5 @@
 ﻿using Assistance_system.Datos;
+using Assistance_system.Logica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,7 +58,16 @@ namespace Assistance_system.Presentacion
             Dmodulo funcion = new Dmodulo();
             DataTable dt = new DataTable();
             funcion.mostrar_Modulos(ref dt);
-            dataListadoModulosBack.DataSource = dt;
+            dataListadoModulos.DataSource = dt;
+            Bases.DiseñoDataGrid(ref dataListadoModulos);
+        }
+        private void estiloDataModulo()
+        {
+
+        }
+        private void dataListadoModulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
