@@ -29,7 +29,7 @@ namespace Assistance_system.Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAgregarRegistro = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -73,6 +73,7 @@ namespace Assistance_system.Presentacion
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dlg = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataListadoPersonal)).BeginInit();
@@ -153,14 +154,14 @@ namespace Assistance_system.Presentacion
             this.dataListadoPersonal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar,
             this.Editar});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoPersonal.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoPersonal.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataListadoPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataListadoPersonal.Location = new System.Drawing.Point(0, 75);
             this.dataListadoPersonal.Name = "dataListadoPersonal";
@@ -228,9 +229,9 @@ namespace Assistance_system.Presentacion
             this.panelIconos.Controls.Add(this.pictureBox13);
             this.panelIconos.Controls.Add(this.flowLayoutPanel3);
             this.panelIconos.Controls.Add(this.flowLayoutPanel2);
-            this.panelIconos.Location = new System.Drawing.Point(1333, 56);
+            this.panelIconos.Location = new System.Drawing.Point(1361, 56);
             this.panelIconos.Name = "panelIconos";
-            this.panelIconos.Size = new System.Drawing.Size(99, 651);
+            this.panelIconos.Size = new System.Drawing.Size(71, 651);
             this.panelIconos.TabIndex = 13;
             this.panelIconos.Visible = false;
             // 
@@ -238,11 +239,12 @@ namespace Assistance_system.Presentacion
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Image = global::Assistance_system.Properties.Resources.back;
-            this.button1.Location = new System.Drawing.Point(1038, 24);
+            this.button1.Location = new System.Drawing.Point(350, 470);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 91);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox13
             // 
@@ -253,6 +255,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 2;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // flowLayoutPanel3
             // 
@@ -275,6 +278,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
@@ -285,6 +289,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -295,6 +300,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 2;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox12
             // 
@@ -305,6 +311,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 4;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
@@ -315,6 +322,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 3;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -337,6 +345,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -347,6 +356,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -357,6 +367,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -367,6 +378,7 @@ namespace Assistance_system.Presentacion
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -377,13 +389,14 @@ namespace Assistance_system.Presentacion
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 4;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // lblAnuncioIcono
             // 
             this.lblAnuncioIcono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(147)))), ((int)(((byte)(144)))));
             this.lblAnuncioIcono.Location = new System.Drawing.Point(1082, 56);
             this.lblAnuncioIcono.Name = "lblAnuncioIcono";
-            this.lblAnuncioIcono.Size = new System.Drawing.Size(219, 229);
+            this.lblAnuncioIcono.Size = new System.Drawing.Size(232, 229);
             this.lblAnuncioIcono.TabIndex = 12;
             this.lblAnuncioIcono.Text = "Elige un icono";
             this.lblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -397,6 +410,7 @@ namespace Assistance_system.Presentacion
             this.icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.icono.TabIndex = 11;
             this.icono.TabStop = false;
+            this.icono.Click += new System.EventHandler(this.icono_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -419,6 +433,7 @@ namespace Assistance_system.Presentacion
             this.btnGuardarUsuario.TabIndex = 1;
             this.btnGuardarUsuario.Text = "Guardar";
             this.btnGuardarUsuario.UseVisualStyleBackColor = true;
+            this.btnGuardarUsuario.Click += new System.EventHandler(this.btnGuardarUsuario_Click);
             // 
             // btnActualizarUsuario
             // 
@@ -444,6 +459,7 @@ namespace Assistance_system.Presentacion
             this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // panel3
             // 
@@ -512,7 +528,7 @@ namespace Assistance_system.Presentacion
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(664, 259);
+            this.label4.Location = new System.Drawing.Point(694, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(309, 38);
             this.label4.TabIndex = 6;
@@ -531,9 +547,11 @@ namespace Assistance_system.Presentacion
             // txtContrasenia
             // 
             this.txtContrasenia.Location = new System.Drawing.Point(355, 255);
+            this.txtContrasenia.MaxLength = 6;
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Size = new System.Drawing.Size(303, 30);
             this.txtContrasenia.TabIndex = 4;
+            this.txtContrasenia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenia_KeyPress);
             // 
             // txtUsuario
             // 
@@ -590,6 +608,10 @@ namespace Assistance_system.Presentacion
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Width = 125;
             // 
+            // dlg
+            // 
+            this.dlg.FileName = "openFileDialog1";
+            // 
             // CtlUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -599,6 +621,7 @@ namespace Assistance_system.Presentacion
             this.Controls.Add(this.panel1);
             this.Name = "CtlUsuarios";
             this.Size = new System.Drawing.Size(1471, 916);
+            this.Load += new System.EventHandler(this.CtlUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -672,5 +695,6 @@ namespace Assistance_system.Presentacion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataListadoModulos;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Marcar;
+        private System.Windows.Forms.OpenFileDialog dlg;
     }
 }

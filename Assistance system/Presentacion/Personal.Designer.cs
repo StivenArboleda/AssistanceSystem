@@ -185,6 +185,7 @@ namespace Assistance_system.Presentacion
             this.dataListadoPersonal.Size = new System.Drawing.Size(1445, 644);
             this.dataListadoPersonal.TabIndex = 1;
             this.dataListadoPersonal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoPersonal_CellClick);
+            this.dataListadoPersonal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoPersonal_CellContentClick);
             // 
             // Eliminar
             // 

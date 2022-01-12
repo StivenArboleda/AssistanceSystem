@@ -521,6 +521,9 @@ namespace Assistance_system.Presentacion
             txtBuscador.Clear();
         }
 
+        private void dataListadoPersonal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
